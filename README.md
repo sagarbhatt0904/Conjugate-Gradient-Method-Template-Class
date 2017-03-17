@@ -6,14 +6,14 @@
 * It can also be used independently to store any sparse matrix in CRS format
 * Creating objects: ```CRS<data-type-of-elements> obj-name(input-matrix, flag)```
 * Input matrix: A 2-D vector. ```vector<vector<data-type> >```
-* ```flag``` = 0, if you want to delete the input matrix after storing in CRS format. (Recommended for large Matrices)
+* ```flag``` = 0, if you want to delete the input matrix after storing in CRS format. (Recommended for large Matrices) <br />
 			 = 1, if you don't want to delete input matrix
 * Currently Methods available includes just Matrix-Vector multiplication. Usage:
 			```C=A.MVMult(B); // performs c=A.b```
 				where,
-					A=CRS object created with the input matrix
-					B=Vector to be multiplied
-					C=Result Vector
+					A=CRS object created with the input matrix <br />
+					B=Vector to be multiplied <br />
+					C=Result Vector <br />
 	I'll add more methods when I find some free time.
 
 ### CGCRYLOV.h
@@ -25,34 +25,34 @@
 * Methods available:
 	* ``` X=Solve(A,B) ```
 
-		Where,
-			A=2D vector ```vector<vector<data-type> >```
-			B=1D vector
-			X=Result vector
-		This method solves any AX=B for positive definite A matrix.
+		Where, <br />
+			A=2D vector ```vector<vector<data-type> >``` <br />
+			B=1D vector <br />
+			X=Result vector <br />
+		This method solves any AX=B for positive definite A matrix. 
 
 	* ``` X=SolvePreCond(A,M,B) ```
 
-		Where,
-			A=2D vector ```vector<vector<data-type> >```
-			M=2D vector ```vector<vector<data-type> >```
-			B=1D vector
-			X=Result vector
+		Where, <br />
+			A=2D vector ```vector<vector<data-type> >``` <br />
+			M=2D vector ```vector<vector<data-type> >``` <br />
+			B=1D vector <br />
+			X=Result vector <br />
 		This method solves any AX=B for positive definite A matrix with preconditioner M.
 
-	* ``` X=SolveCRS(A,M,B) ```
+	* ``` X=SolveCRS(A,M,B) ``` 
 
-		Where,
-			A=CRS Object created with input sparse matrix
-			B=1D vector
-			X=Result vector
+		Where, <br />
+			A=CRS Object created with input sparse matrix <br />
+			B=1D vector <br />
+			X=Result vector <br />
 		This method solves any AX=B for positive definite sparse A matrix.
 
 	* ``` X=SolvePreCondCRS(A,M,B) ```
 
-		Where,
-			A=CRS Object created with input sparse matrix
-			M=CRS Object created with input preconditioner
-			B=1D vector
-			X=Result vector
+		Where, <br />
+			A=CRS Object created with input sparse matrix <br />
+			M=CRS Object created with input preconditioner <br />
+			B=1D vector <br />
+			X=Result vector <br />
 		This method solves any AX=B for positive definite sparse A matrix with preconditioner M.
