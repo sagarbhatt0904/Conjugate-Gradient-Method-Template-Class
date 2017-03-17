@@ -1,6 +1,6 @@
-#About these classes:
+# About these classes:
 
-###CRS.h
+### CRS.h
 
 * This file contains class to store a sparse matrix in Compressed Row Storage format
 * It can also be used independently to store any sparse matrix in CRS format
@@ -16,7 +16,7 @@
 					C=Result Vector
 	I'll add more methods when I find some free time.
 
-###CGCRYLOV.h
+### CGCRYLOV.h
 
 * This file contains class to solve AX=B system
 * Creating objects: ```CGCRYLOV<data-type-of-elements>=obj-name(problem-size)```
