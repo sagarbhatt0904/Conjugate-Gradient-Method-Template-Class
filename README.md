@@ -43,7 +43,7 @@
 	* ``` X=SolveCRS(A,M,B) ``` 
 
 		Where, <br />
-			A=CRS Object created with input sparse matrix <br />
+			A=2D vector ```vector<vector<data-type> >``` <br />
 			B=1D vector <br />
 			X=Result vector <br />
 		This method solves any AX=B for positive definite sparse A matrix.
@@ -51,8 +51,8 @@
 	* ``` X=SolvePreCondCRS(A,M,B) ```
 
 		Where, <br />
-			A=CRS Object created with input sparse matrix <br />
-			M=CRS Object created with input preconditioner <br />
+			A=2D vector ```vector<vector<data-type> >``` <br />
+			M=2D vector ```vector<vector<data-type> >``` <br />
 			B=1D vector <br />
 			X=Result vector <br />
 		This method solves any AX=B for positive definite sparse A matrix with preconditioner M.
