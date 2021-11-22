@@ -14,8 +14,7 @@
 					A=CRS object created with the input matrix <br />
 					B=Vector to be multiplied <br />
 					C=Result Vector <br />
-	I'll add more methods when I find some free time.
-
+	
 ### CGCRYLOV.h
 
 * This file contains class to solve AX=B system
